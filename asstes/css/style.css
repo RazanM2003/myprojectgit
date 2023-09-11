@@ -1,0 +1,106 @@
+:root{
+--mainColor:rgb(42, 165, 89);
+}
+.header{
+    background-image: url('../img/bg_osaka.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.header-content a{
+    text-decoration: none;
+    color:var(--mainColor);
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:background-color 1s;
+}
+.icon:hover{
+   background-color:var(--mainColor);
+
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--mainColor);
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--mainColor);
+}
+.titel h2
+{
+font-size: 4rem;
+letter-spacing: 10px;
+color: #cacaca;
+    font-weight: 900;
+}
+.titel h3
+{
+font-size: 2rem;
+font-weight: 900;
+}
+.about {
+    background-image: url('../img/light_dot.jpg');
+}
+.razan.par{
+    color:var(--mainColor);
+}
+.about .about-content  p:first-of-type
+{
+    color: var(--mainColor);
+}
+.about .about-content a{
+    color:black;
+}
+.Services
+{
+    background-image:url('../img/dark_dot.jpg') ;
+}
+.Services .titel h3
+{
+color:white;
+position: relative;
+}
+.Services .titel h2
+{
+color:rgb(49, 47, 47);
+}
+.Services .titel p
+{
+color:white;
+}
+.Services .service-item h3:after
+{
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 10%;
+    height: 3px;
+    background-color: var(--mainColor);
+    transition: width 1s;
+}
+.Services .service-item:hover  h3:after
+{
+    width: 30%;
+}
+.service-item:hover .icon{
+    background-color: var(--mainColor) !important;
+}
+.clients img{
+width: 120px;
+height: 120px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--mainColor);
+    border: none;
+}
+.nav-tabs .nav-link{
+    color:black;
+    border: none;
+}
+.nav-tabs{
+    justify-content: center;
+}
